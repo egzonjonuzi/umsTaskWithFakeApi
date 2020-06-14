@@ -1,0 +1,34 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Post 1",
+      "text": "This example is a quick exercise to illustrate how the top-aligned navbar works. As you scroll, this navbar remains in its original position and moves with the rest of the page.",
+      "author": "Egzon Jonuzi",
+      "user": "1"
+    },
+    {
+      "id": 2,
+      "title": "Post 33",
+      "text": "Mendi1231124124",
+      "author": "Armend Hyseni",
+      "user": 2
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "egzon",
+      "password": "123456",
+      "firstName": "Egzon",
+      "lastName": "Jonuzi"
+    },
+    {
+      "firstName": "Armend",
+      "lastName": "Hyseni",
+      "username": "armend",
+      "password": "123123",
+      "id": 2
+    }
+  ]
+}

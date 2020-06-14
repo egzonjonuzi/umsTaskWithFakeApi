@@ -1,0 +1,18 @@
+<div ><a routerLink="/add" class="btn btn-sm btn-success mb-2 float-right"><i class="fa fa-plus"></i></a></div>
+<br>
+<br>
+                <div class="jumbotron" *ngFor="let item of posts">
+                    <h6>{{item.title}}</h6>
+                    <p class="lead">{{item.text}}</p>
+                    <p class="float-right">{{item.author}}</p>
+                    <hr>
+                    <div class="row" *ngIf="user.id == item.user">
+                        <div class="float-right">
+                            <a routerLink="edit/{{item.id}}" class="btn btn-sm btn-primary mr-1"><i class="fa fa-edit"></i></a>
+                            <button (click)="deletePost(item.id)" class="btn btn-sm btn-danger btn-delete-user" [disabled]="posts.isDeleting">
+                                <span *ngIf="posts.isDeleting" class="spinner-border spinner-border-sm"></span>
+                                <span *ngIf="!posts.isDeleting"><i class="fa fa-trash"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
